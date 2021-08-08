@@ -149,6 +149,6 @@ export const attemptVote = (id, vote) => async (dispatch, getState) => {
     const post = await castVote(id, vote, token);
     dispatch(voteSuccess(post));
   } catch (error) {
-    dispatch(voteError(error));
+    dispatch(voteError(error)); 
   }
 };
